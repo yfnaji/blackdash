@@ -1,13 +1,10 @@
 import yfinance as yf
 from scipy.stats import norm
-from math import sqrt, exp, log, isnan
+from math import sqrt, exp, log
 import numpy as np
 from .brentdekker import BrentDekker
 import subprocess
-from decimal import Decimal
-from calculations import linearalgebra, stochastic
 import subprocess
-import logging
 
 
 class BlackScholes:
@@ -101,18 +98,6 @@ class BlackScholes:
         sigma = implied_volatility_sigma if implied_volatility_sigma else self.vol
         count = 0
         while True:
-            # command = [
-            #         "./calculations/longstaffschwartz/main", 
-            #         f"{self.drift}", 
-            #         f"{sigma}", 
-            #         f"{self.maturity_days}",
-            #         f"{self.stock_price}", 
-            #         f"{self.strike}",
-            #         f"{1 if self.put_option else 0}",
-            #         f"{self.days_in_year}"
-            #     ]
-            # _data = subprocess.run(command, stdout=subprocess.PIPE).stdout.decode("utf-8")
-            # _data = _data.split(" ")
 
             command = [
                     "./calculations/longstaffschwartz/longstaffschwartz.sh", 
