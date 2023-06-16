@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# pip3 install virtualenv
+pip3 install virtualenv
 
 if [ $# -eq 1 ]; then
     if [ "$1" = "--debug" ]; then
@@ -22,7 +22,7 @@ else
     source blackdash-venv/bin/activate
 fi
 
-# pip install -r requirements.txt
-# g++ -std=c++11 calculations/longstaffschwartz/longstaff_schwartz.cpp calculations/longstaffschwartz/main.cpp -o calculations/longstaffschwartz/main
+pip install -r requirements.txt
+g++ -std=c++11 calculations/longstaffschwartz/longstaff_schwartz.cpp calculations/longstaffschwartz/main.cpp -o calculations/longstaffschwartz/main
 
 python server.py $debug
