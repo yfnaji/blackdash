@@ -2,10 +2,13 @@ from index import layout
 from app import app
 import sys
 
-if sys.argv[1] == "debug":
-    print(f"arg {sys.argv[1]}")
-    debug = True
-else:
+try:
+    if sys.argv[1] == "debug":
+        print(f"arg {sys.argv[1]}")
+        debug = True
+    else:
+        debug = False
+except IndexError:
     debug = False
 
 app.layout = layout
