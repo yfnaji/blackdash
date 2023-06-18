@@ -17,7 +17,7 @@ block_stock = html.Div(
         html.H5(
             [
                 "By Yasser Naji | ",
-                "v1.0.1 | ",
+                "v1.0.4 | ",
                 html.A(
                     "GitHub", 
                     href="https://github.com/yfnaji/blackdash",
