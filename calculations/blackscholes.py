@@ -4,7 +4,6 @@ from math import sqrt, exp, log
 import numpy as np
 from .brentdekker import BrentDekker
 import subprocess
-import subprocess
 
 
 class BlackScholes:
@@ -20,7 +19,7 @@ class BlackScholes:
         
         volatility = 0
         for i in range(len(data) - 1):
-            lr = log( data.iloc[i].Close / data.iloc[i+1].Close )
+            lr = log(data.iloc[i].Close / data.iloc[i+1].Close)
             volatility += (lr - avg_returns) ** 2
 
         volatility /= days - 2
