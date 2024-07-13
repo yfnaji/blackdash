@@ -2,16 +2,6 @@
 
 pip3 install virtualenv
 
-if [ $# -eq 1 ]; then
-    if [ "$1" = "--debug" ]; then
-        debug="debug"
-    else
-        debug="_"
-    fi
-else
-    debug="_"
-fi
-
 if ! [[ -d blackdash-venv ]]; then
     python3 -m venv blackdash-venv
 fi
