@@ -81,7 +81,7 @@ bottom = html.Div(
         ),
             html.Div(
                 [
-                    html.H3("Calculations"),
+                    html.H3("Calculations", className="calculations-h3"),
                     div_calcs
                 ],
                 className="div-config"
