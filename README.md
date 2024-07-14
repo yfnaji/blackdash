@@ -4,7 +4,11 @@ BlackDash (Black-Scholes Dashboard) is a simple dynamic web app that provides th
 
 This project is still a work in progress, there are several other features to be included as well as enhancing current functionalities.
 
+<img width="1433" alt="blackdash-ui" src="https://github.com/user-attachments/assets/e09dfca7-8b49-43bf-9cc0-e433ea13e72f">
+
 # Stock
+
+<img width="225" alt="stock" src="https://github.com/user-attachments/assets/18a328b8-9dcf-49b9-9ed3-226a6f48c43a">
 
 ## Index
 
@@ -33,11 +37,15 @@ The duration can be chosen which will in turn amend the graph to represent the s
 
 # Prices
 
+<img width="262" alt="prices" src="https://github.com/user-attachments/assets/317d2fad-97c5-48f9-aa0f-db3f8616cfa4">
+
 The stock price is displayed under the `Prices` header along with its associated currency. The strike price can be configured any value for your option. 
 
 `Calendar` days assumes 365 days in a year in the calculation of the option price, while `Trading` days assumes 252 days. There is currently ongoing work for a more sophisticated approach to dates by utilising the ISDA standard, and potentially others.
 
 # Option Config
+
+<img width="262" alt="option_pricing" src="https://github.com/user-attachments/assets/17e637df-d6dc-487f-a93c-6a7452d91614">
 
 ## European Options
 
@@ -69,6 +77,8 @@ This extra flexibility would make American options a little more valuable than i
 
 # Calculations
 
+<img width="321" alt="calculations" src="https://github.com/user-attachments/assets/fe3b3c31-131e-464c-b064-0343f9d90d02">
+
 The calculation for the `Option Price` has been provided in the previous section for European and American options.
 
 The `Annual Return` is calculated as follows:
@@ -96,6 +106,8 @@ The Greeks are sensitivities of the option price with respect to certain paramet
 Example: for $\sigma$ we measure the change in the option price $V$ with respect to a change in a single unit of time $t$. If $\nu=2$ (volatility sensitivity), then the option price $V$ will increase by $2 when volatility moves up by 1.
 
 ## Volatility
+
+<img width="190" alt="volatility" src="https://github.com/user-attachments/assets/c8312970-1788-4a68-aa00-3b91f0585639">
 
 The *volatility* $\sigma$ is the magnitude of randomness of the asset price.
 
