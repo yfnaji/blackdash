@@ -85,14 +85,14 @@ body::before {
 
 
 .div-config {
-   z-index:2;
-    flex-grow: 1;
-    border: 1px solid #ffffff1c;
-border-radius: 30px;
-    margin: 1vw;
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
+  z-index:2;
+  flex-grow: 1;
+  border: 1px solid #ffffff1c;
+  border-radius: 30px;
+  margin: 1vw;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -261,6 +261,11 @@ label {
   background: rgb(25, 25, 25);
   min-width: 7vw !important;
   width: 7vw;
+  margin-bottom: 1px;
+  padding-bottom: 1px;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin: 0px;
 }
 
 .vol-input {
@@ -277,10 +282,16 @@ label {
   font-size: 1.2vw;
   color: rgba(var(--main-color), 0.9);
   margin: 0;
-  margin-bottom: 1.35vw;
+  margin-bottom: 0.5vw;
   margin-top: 1vw;
 }
 
+.calculations-h3 {
+  font-size: 1.2vw;
+  color: rgba(var(--main-color), 0.9);
+  margin: 0;
+  margin-bottom: 0.5vw;
+}
 
 h2 {
   font-size: 1.5vw;
@@ -304,8 +315,9 @@ h5 {
   font-size: 0.8vw;
   color: white;
   margin: 0;
-  margin-bottom: 20px;
-  margin-right: 5px;
+  margin-bottom: 1vw;
+  margin-right: 0.5vw;
+  font-size: 0.8rem;
 }
 
 
@@ -317,6 +329,7 @@ td {
   margin-bottom: 20px;
   font-size: 0.8rem;
   margin-right: 5px;
+  padding-left: 0vw;
 }
 
 
