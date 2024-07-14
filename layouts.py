@@ -85,13 +85,21 @@ block_stock = html.Div(
 
 price_stock = html.Div(
     [
-        html.H5("Stock Price"),
-        html.Div(
+        html.Tr(
             [
-                html.H5(id="stock"),
-                html.H5(id="stock-currency")
-            ],
-            className="row-div"
+                html.Td(
+                    html.H5("Stock Price"),
+                ),
+                html.Td(
+                    html.Div(
+                        [
+                            html.H5(id="stock"),
+                            html.H5(id="stock-currency")
+                        ],
+                        className="row-div"
+                    )
+                )
+            ]
         )
     ],
 )
