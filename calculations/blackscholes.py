@@ -133,7 +133,7 @@ class BlackScholes:
         return data
 
 
-    def option_calcutions(self):
+    def option_calculations(self):
         
         if self.american:
             data = self.american_option_price()

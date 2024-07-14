@@ -196,7 +196,7 @@ def calculations(
         days_in_year=days_in_year
     )
 
-    data = model.option_calcutions()
+    data = model.option_calculations()
     currency_round = 0 if currency in ("JPY", "KRW") else 2
 
     return (
