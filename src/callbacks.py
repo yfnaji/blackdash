@@ -69,7 +69,7 @@ def update_figure(name, period_no, period_type, plot):
     data = yf.download(tickers=ticker.iloc[0], period=period, interval=interval)
 
     if plot:
-        fig = go.Figure(px.line(data.Close, x=data.index, y="Close"))
+        fig = go.Figure(px.line(data.Close, x=data.index, y=ticker[0]))
     else:
         def _split_data(data, period):
             if period == "hours":

@@ -8,7 +8,7 @@ from numpy.random import randn, seed
 seed(2718)
 
 def model_geometric_brownian_motion(S0, mu, sigma, tau, days_in_year):
-    return round(S0 * exp((mu - (sigma ** 2) / 2.0) * (tau / days_in_year) - (sqrt(tau / days_in_year) * sigma * randn(1))), 2)
+    return round(S0[0] * exp((mu - (sigma ** 2) / 2.0) * (tau / days_in_year) - (sqrt(tau / days_in_year) * sigma * randn(1))), 2)
 
 
 def model_arima(ticker, tau):

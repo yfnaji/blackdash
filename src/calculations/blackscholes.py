@@ -53,7 +53,7 @@ class BlackScholes:
             return factor
 
         self.ticker = ticker
-        self.stock_price = stock_price
+        self.stock_price = stock_price[0]
         self.strike = strike
 
         self.tau = maturity_days / days_in_year
